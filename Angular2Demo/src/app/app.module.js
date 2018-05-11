@@ -10,13 +10,14 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var employee_component_1 = require("./employee/employee.component");
+var product_list_component_1 = require("./products/product-list.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, employee_component_1.EmployeeComponent],
+            declarations: [app_component_1.AppComponent, employee_component_1.EmployeeComponent, product_list_component_1.ProductListComponent],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

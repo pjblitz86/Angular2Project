@@ -10,11 +10,18 @@ var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.pageHeader = "Employee Details";
+        this.imagePath = 'Images/Logo.JPG';
+        this.isDisabled = false;
+        this.firstName = 'Tom';
+        this.lastName = 'Hopkins';
     }
+    AppComponent.prototype.getFullName = function () {
+        return this.firstName + ' ' + this.lastName;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n                    <div>\n                        <h1>{{pageHeader}}</h1>\n                        <my-employee></my-employee>\n                    </div>\n"
+            template: "\n                    <div>\n                        <h1>{{getFullName()}}</h1>\n                        <img src='http://www.pragimtech.com/{{imagePath}}'/>\n                        <my-employee></my-employee>\n                        <pm-products></pm-products>\n                        <button [disabled]='isDisabled'>Click Me</button>\n                    </div>\n"
         })
     ], AppComponent);
     return AppComponent;
