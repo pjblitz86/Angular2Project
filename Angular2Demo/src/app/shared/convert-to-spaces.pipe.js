@@ -7,19 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var product_service_1 = require("./products/product.service");
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
-        this.pageTitle = 'Acme Product Management';
+var ConvertToSpacesPipe = /** @class */ (function () {
+    function ConvertToSpacesPipe() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: "\n                    <div>\n                        <h1>{{pageTitle}}</h1>\n                        <pm-products></pm-products>\n                    </div>\n               ",
-            providers: [product_service_1.ProductService]
+    ConvertToSpacesPipe.prototype.transform = function (value, character) {
+        return value.replace(character, ' ');
+    };
+    ConvertToSpacesPipe = __decorate([
+        core_1.Pipe({
+            name: 'convertToSpaces'
         })
-    ], AppComponent);
-    return AppComponent;
+    ], ConvertToSpacesPipe);
+    return ConvertToSpacesPipe;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ConvertToSpacesPipe = ConvertToSpacesPipe;
+//# sourceMappingURL=convert-to-spaces.pipe.js.map
