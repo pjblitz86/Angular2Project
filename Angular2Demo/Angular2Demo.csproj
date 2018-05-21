@@ -1212,6 +1212,9 @@
     <Content Include="node_modules\rxjs\util\tryCatch.js.map" />
     <Content Include="node_modules\rxjs\util\UnsubscriptionError.js.map" />
     <None Include="packages.config" />
+    <Content Include="src\app\home\welcome.component.html" />
+    <Content Include="src\app\products\product-detail.component.css" />
+    <Content Include="src\app\products\product-detail.component.html" />
     <Content Include="src\app\products\product-list.component.css" />
     <Content Include="src\app\products\product-list.component.html" />
     <Content Include="src\app\shared\star.component.css" />
@@ -2345,6 +2348,9 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\home\welcome.component.ts" />
+    <TypeScriptCompile Include="src\app\products\product-detail.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\products\product-detail.component.ts" />
     <TypeScriptCompile Include="src\app\products\product-list.component.ts" />
     <TypeScriptCompile Include="src\app\products\product.service.ts" />
     <TypeScriptCompile Include="src\app\products\product.ts" />
